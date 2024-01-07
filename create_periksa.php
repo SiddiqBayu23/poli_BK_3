@@ -22,7 +22,7 @@
         }
 
         // Query Data Periksa
-        $total_harga = $total_harga_obat;
+        $total_harga = 150000 + $total_harga_obat;
         $stmt_periksa = $mysqli->prepare("INSERT INTO periksa (id_daftar_poli, tgl_periksa, catatan, biaya_periksa) VALUES (?, ?, ?, ?)");
         $stmt_periksa->bind_param('issi', $id_daftar_poli, $tgl_periksa, $catatan, $total_harga);
         $stmt_periksa->execute();
