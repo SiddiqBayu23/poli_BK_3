@@ -31,7 +31,7 @@
 
         // Query Data Periksa
         $stmt_periksa = $mysqli->prepare("UPDATE periksa SET id_daftar_poli = ?, tgl_periksa = ?, catatan = ?, biaya_periksa = ? WHERE id = ?");
-        $total_harga_periksa = $total_harga_obat;
+        $total_harga_periksa = 150000 + $total_harga_obat;
         $stmt_periksa->bind_param('issii', $id_daftar_poli, $tgl_periksa, $catatan, $total_harga_periksa, $id_periksa);
         $stmt_periksa->execute();
         $stmt_periksa->close();
