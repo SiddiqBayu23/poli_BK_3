@@ -125,7 +125,14 @@ if (!isset($_SESSION['nama'])) {
                                 <i class="nav-icon fas fa-edit"></i>
                                 <p>
                                     Riwayat Periksa
-
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="menujadwalperiksa.php" class="nav-link"> 
+                                <i class="nav-icon fas fa-calendar"></i>
+                                <p>
+                                    Jadwal Periksa
                                 </p>
                             </a>
                         </li>
